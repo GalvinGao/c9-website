@@ -1,0 +1,23 @@
+{
+  "members": {
+    "total": 68,
+    "limit": 80
+  },
+  "administrators": {
+    "total": 7,
+    "limit": 10
+  },
+  "campsite": {
+    "era": "蒸汽时代",
+    "mayor": "天秀丶ice",
+    "balance": {
+      "resources": 2.90e6,
+      "property": 2.641e4
+    }
+  },
+  "notice": {
+    "name": "营地公告 第一期",
+    "date": "2019.1.1",
+    "content": "发展方向确定、职位正规化、管理职位调整"
+  }
+}
