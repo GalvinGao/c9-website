@@ -224,7 +224,7 @@
       }, obj || self)
     }
 
-    fetch(new Request("status.json")).then(response => {
+    fetch(new Request("status.json?_=" + new Date().getTime())).then(response => {
       if (!response.ok) {
         throw new Error('HTTP error, status = ' + response.status);
       }
