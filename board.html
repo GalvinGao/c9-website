@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="copyright" content="C9 is a non-registered trademark of a bunch interesting people." />
+    <meta name="description" content="DescriptionGoesHere" />
+    <meta name="keywords" content="C9,明日之后C9,C9明日之后,明日之后营地,明日之后" />
+    <meta name="robots" content="index, follow" />
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>公告板 | C9 营地群组</title>
+
+    <!-- CSS  -->
+    <link href="https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/materialize/1.0.0-rc.2/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.proxy.ustclug.org/css?family=Noto+Serif+SC:500" rel="stylesheet">
+
+    <style>
+
+        nav ul a,
+        nav .brand-logo {
+            color: #eee;
+        }
+
+        p {
+            line-height: 2rem;
+        }
+
+        .parallax-container {
+            min-height: 380px;
+            line-height: 0;
+            height: auto;
+            color: rgba(255,255,255,.9);
+        }
+        .parallax-container .section {
+            width: 100%;
+        }
+
+        @media only screen and (max-width : 992px) {
+            .parallax-container .section {
+                position: absolute;
+                top: 40%;
+            }
+            #index-banner .section {
+                top: 10%;
+            }
+        }
+
+        @media only screen and (max-width : 600px) {
+            #index-banner .section {
+                top: 0;
+            }
+        }
+
+        .icon-block {
+            padding: 0 15px;
+        }
+        .icon-block .material-icons {
+            font-size: inherit;
+        }
+
+        footer.page-footer {
+            margin: 0;
+        }
+
+        body {
+            font-family: "Noto Serif SC", "Segoe UI", "Microsoft YaHei", "Adobe 黑体 Std R", 黑体, sans-serif;
+            font-weight: 600
+        }
+
+        data {
+            font-family: "Source Code Pro", "Fira Code", "Courier New", "Courier", monospace;
+            padding: 2px 5px;
+            background: #232323;
+            font-weight: 700;
+            border-radius: 4px;
+            color: #efefef;
+        }
+
+         .cm-article {
+             box-shadow: 0 0 0 3px rgba(0, 0, 0, .3);
+             border-radius: 5px;
+             padding: 1em !important;
+             transition: all 225ms cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+         }
+    </style>
+</head>
+<body>
+<!-- Modal: Join Us -->
+<div id="join" class="modal">
+    <div class="modal-content" style="line-height: 1.7;">
+        <h4>加入我们</h4>
+        <p>在你加入明日之后 C9丶起源 营地前，请先检查是否符合我们的申请需求：</p>
+        <h5><i class="material-icons" style="margin-top: -2px;">description</i> <span>普通市民 申请需求</span></h5>
+        <p>申请为 <data>普通市民</data> 需达到下列条件：</p>
+        <ul class="browser-default">
+            <li>庄园等级达到 <data>6</data> 级或以上</li>
+            <li>采集熟练度达到 <data>27</data> 或以上</li>
+            <li>制作熟练度达到 <data>27</data> 或以上</li>
+            <li>战斗熟练度达到 <data>27</data> 或以上</li>
+            <li>枪械配件等级分别达到 <data>5</data>, <data>5</data>, <data>5</data> 或以上</li>
+            <li>护甲配件等级分别达到 <data>5</data>, <data>5</data>, <data>5</data> 或以上</li>
+            <li>无过往不良记录</li>
+        </ul>
+        <h5><i class="material-icons" style="margin-top: -2px;">description</i> <span>荣誉市民 申请需求</span></h5>
+        <p>在达到 <data>普通市民</data> 的申请条件的前提下，满足下列条件：</p>
+        <ul class="browser-default">
+            <li>庄园等级达到 <data>7</data> 级或以上</li>
+            <li>采集熟练度达到 <data>30</data> 或以上</li>
+            <li>制作熟练度达到 <data>30</data> 或以上</li>
+            <li>战斗熟练度达到 <data>30</data> 或以上</li>
+        </ul>
+        <p class="red-text text-darken-2" style="font-weight: 700;">暂不满足申请需要的玩家，欢迎你在满足我们的加入需求后申请加入。</p>
+        <span class="green-text text-darken-2">
+        <p>已满足上述要求的玩家，恭喜你！你已经达到了 C9丶起源 的申请要求，请根据下方步骤提示完成申请。</p>
+        <h5><i class="material-icons" style="margin-top: -2px;">touch_app</i> <span>申请步骤</span></h5>
+        <ol>
+          <li>前往 <data>快乐101</data> 并找到 <data>比莉</data></li>
+          <li>填入营地名 <data class="clipboard" data-clipboard-text="C9丶起源" style="cursor: pointer">C9丶起源</data> <small id="indicator">（点击即可复制）</small> 并提交申请</li>
+          <li>等待营地管理员通过你的申请，即成功加入我们！</li>
+        </ol>
+      </span>
+    </div>
+    <div class="modal-footer">
+        <a href="#nothing" class="modal-close waves-effect btn-flat">关闭</a>
+    </div>
+</div>
+
+<nav class="blue-grey darken-1" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">
+            <span class="truncate">C9 营地群组</span>
+        </a>
+        <ul class="right hide-on-med-and-down">
+            <li><a class="active" href="/">首页</a></li>
+            <li><a href="/board">公告板</a></li>
+            <li><a class="waves-effect waves-light btn modal-trigger" href="#join">加入我们 <i class="material-icons right">send</i></a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+            <li><a class="active" href="/">首页</a></li>
+            <li><a href="/board">公告板</a></li>
+            <li><a class="waves-effect waves-light btn modal-trigger" href="#join">加入我们 <i class="material-icons right">send</i></a></li>
+        </ul>
+
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="section">
+        <h3 class="center">公告板</h3>
+        <h6 class="center">想说点什么呢</h6>
+        <div class="divider" style="margin: 2em 0;"></div>
+
+        <div class="cm-article" data-key="c9_board__v1"></div>
+
+    </div>
+</div>
+
+<footer class="page-footer blue-grey">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">C9 营地现状态</h5>
+                <li class="grey-text text-lighten-4">职位数量：<status name="administrators.total">加载中...</status>/<status name="administrators.limit">加载中...</status></li>
+                <li class="grey-text text-lighten-4">市民数量：<status name="members.total">加载中...</status>/<status name="members.limit">加载中...</status></li>
+                <li class="grey-text text-lighten-4">市长：<status name="campsite.mayor">加载中...</status></li>
+                <li class="grey-text text-lighten-4">时代：<status name="campsite.era">加载中...</status></li>
+                <li class="grey-text text-lighten-4">营地资源总值：<status name="campsite.balance.resources">加载中...</status></li>
+                <li class="grey-text text-lighten-4">营地总资产：<status name="campsite.balance.property">加载中...</status></li>
+                <li class="grey-text text-lighten-4">营地公告：<status name="notice.content">加载中...</status> (<status name="notice.date">加载中...</status>)</li>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Website by <a class="blue-text text-lighten-3" href="https://github.com/GalvinGao">Galvin Gao</a>. Vector Art by <a class="blue-text text-lighten-3" href="https://www.vecteezy.com">Vecteezy</a>.
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.bootcss.com/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="https://cdn.bootcss.com/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script>
+    M.AutoInit();
+
+    function resolve(path, obj) {
+        return path.split('.').reduce(function(prev, curr) {
+            return prev ? prev[curr] : null
+        }, obj || self)
+    }
+
+    fetch(new Request("status.json?_=" + new Date().getTime())).then(response => {
+        if (!response.ok) {
+            throw new Error('HTTP error, status = ' + response.status);
+        }
+        return response.json()
+    }).then(response => {
+        document.querySelectorAll("status").forEach(el => {
+            let name = el.getAttribute("name");
+            el.innerHTML = resolve(name, response)
+        })
+    });
+
+    var clipboard = new ClipboardJS(".clipboard");
+
+    clipboard.on('success', function(e) {
+        console.log("success", e);
+        document.querySelector("#indicator").innerHTML = "（复制成功！）";
+        setTimeout(() => {
+            document.querySelector("#indicator").innerHTML = "（点击即可复制）"
+        }, 3500)
+    });
+    clipboard.on('error', function(e) {
+        console.log("error", e);
+        document.querySelector("#indicator").innerHTML = "（复制失败，请自行复制营地名称至游戏）"
+    });
+</script>
+<script async src="https://getmirrorshades.com/agent.js" data-siteId="MA-4YR969-ADH"></script>
+<link rel="stylesheet" href="//comment.moe/dest/static/css/plus.css">
+<script src="//comment.moe/dest/static/js/build.js" charset="UTF-8"></script>
+</body>
+</html>
