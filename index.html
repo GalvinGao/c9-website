@@ -76,6 +76,21 @@
       border-radius: 4px;
       color: #efefef;
     }
+
+    .header-video {
+      position: absolute !important;
+      left: 0 !important;
+      object-fit: cover !important;
+      width: 100% !important;
+      height: 100% !important;
+      min-height: 110%;
+      top: -2em !important;
+      filter: brightness(1.5);
+    }
+
+    .header-container {
+      background: url(https://mrzh.res.netease.com/pc/gw/20181019211423/img/video_bg_f2bfbb1.png) repeat;
+    }
   </style>
 </head>
 <body>
@@ -140,7 +155,7 @@
     </div>
   </nav>
 
-  <div id="index-banner" class="parallax-container">
+  <div id="index-banner" class="parallax-container header-container">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
@@ -158,7 +173,9 @@
       </div>
     </div>
     <div class="parallax">
-      <img src="//static.qn.iblueg.cn/c9-website/slogan-background.jpg" />
+      <video class="responsive-video header-video" loop="loop" muted="muted" preload="auto" autoplay="autoplay">
+        <source src="https://nie.v.netease.com/nie/2018/1019/b8a8f140254bb0ad70520303fb55e729qt.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 
@@ -216,8 +233,8 @@
           <li class="grey-text text-lighten-4">市民数量：<status name="members.total">加载中...</status>/<status name="members.limit">加载中...</status></li>
           <li class="grey-text text-lighten-4">市长：<status name="campsite.mayor">加载中...</status></li>
           <li class="grey-text text-lighten-4">时代：<status name="campsite.era">加载中...</status></li>
-          <li class="grey-text text-lighten-4">营地资源总值：<status name="campsite.balance.resources">加载中...</status></li>
-          <li class="grey-text text-lighten-4">营地总资产：<status name="campsite.balance.property">加载中...</status></li>
+          <li class="grey-text text-lighten-4">营地资源总值：<status name="campsite.balance.resources" separator="thousand">加载中...</status></li>
+          <li class="grey-text text-lighten-4">营地总资产：<status name="campsite.balance.property" separator="thousand">加载中...</status></li>
           <li class="grey-text text-lighten-4">营地公告：<status name="notice.content">加载中...</status> (<status name="notice.date">加载中...</status>)</li>
         </div>
       </div>
@@ -247,7 +264,12 @@
     }).then(response => {
       document.querySelectorAll("status").forEach(el => {
         let name = el.getAttribute("name");
-        el.innerHTML = resolve(name, response)
+        let data = resolve(name, response);
+        if (el.getAttribute("separator") && el.getAttribute("separator") === "thousand") {
+          el.innerHTML = data.toLocaleString()
+        } else {
+          el.innerHTML = data
+        }
       })
     });
 
