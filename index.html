@@ -174,7 +174,7 @@
     </div>
     <div class="parallax">
       <video class="responsive-video header-video" loop="loop" muted="muted" preload="auto" autoplay="autoplay" playsinline="playsinline">
-        <source src="https://nie.v.netease.com/nie/2018/1019/b8a8f140254bb0ad70520303fb55e729qt.mp4" type="video/mp4">
+        <source src="//static.qn.iblueg.cn/c9-website/b8a8f140254bb0ad70520303fb55e729qt.mp4" type="video/mp4">
       </video>
     </div>
   </div>
@@ -222,8 +222,8 @@
       </div>
     </div>
     <div class="parallax">
-      <video class="responsive-video header-video" loop="loop" muted="muted" preload="auto" autoplay="autoplay" playsinline="playsinline">
-        <source src="https://nie.v.netease.com/nie/2018/1019/0e58f394bf571b58e995a5630922beccqt.mp4" type="video/mp4">
+      <video class="responsive-video header-video" loop="loop" muted="muted" preload="metadata" autoplay="autoplay" playsinline="playsinline">
+        <source src="//static.qn.iblueg.cn/c9-website/0e58f394bf571b58e995a5630922beccqt.mp4" type="video/mp4">
       </video>
     </div>
   </div>
@@ -291,6 +291,12 @@
       document.querySelector("#indicator").innerHTML = "（复制失败，请自行复制营地名称至游戏）"
     });
   </script>
-  <script async src="https://getmirrorshades.com/agent.js" data-siteId="MA-4YR969-ADH"></script>
+  <script>
+    /*
+ 2017 Parks Digital LLC
+*/
+    (function(){var a="direct.invalid",b=document.referrer;if(b){a=b.split(":")[0].toLowerCase();var c=document.createElement("a"),d=c.hostname;c.href=b;b=c.hostname;"file"==a?a="file.invalid":"http"!=a&&"https"!=a?a="app.invalid":b==d?a="session.invalid":b.match(/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/)?a="ip.invalid":(a=b.split(".").slice(-1)[0],a=-1=="au at fr hu nz il ru za kr es tr uk my in tw hk jp".indexOf(a)?-2:-3,a=b.split(".").slice(a).join("."))}b=["source",a].join("\t");a=new XMLHttpRequest;
+      a.open("POST","https://api.getmirrorshades.com/MA-4YR969-ADH");a.setRequestHeader("Content-type","text/plain");a.send(b)})();
+  </script>
   </body>
 </html>
