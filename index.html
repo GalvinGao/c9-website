@@ -173,6 +173,7 @@
       </div>
     </div>
     <div class="parallax">
+      <img src="#" alt="Fake Image" style="display: none" />
       <video class="responsive-video header-video" loop="loop" muted="muted" preload="auto" autoplay="autoplay" playsinline="playsinline">
         <source src="//static.qn.iblueg.cn/c9-website/b8a8f140254bb0ad70520303fb55e729qt.mp4" type="video/mp4">
       </video>
@@ -222,6 +223,7 @@
       </div>
     </div>
     <div class="parallax">
+      <img src="#" alt="Fake Image" style="display: none" />
       <video class="responsive-video header-video" loop="loop" muted="muted" preload="metadata" autoplay="autoplay" playsinline="playsinline">
         <source src="//static.qn.iblueg.cn/c9-website/0e58f394bf571b58e995a5630922beccqt.mp4" type="video/mp4">
       </video>
@@ -277,7 +279,7 @@
       })
     });
 
-    var clipboard = new ClipboardJS(".clipboard");
+    const clipboard = new ClipboardJS(".clipboard");
 
     clipboard.on('success', function(e) {
       console.log("success", e);
