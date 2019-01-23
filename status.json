@@ -1,6 +1,6 @@
 {
   "members": {
-    "total": 67,
+    "total": 66,
     "limit": 80
   },
   "administrators": {
@@ -11,11 +11,11 @@
     "era": "蒸汽时代",
     "mayor": "天秀丶ice",
     "balance": {
-      "resources": 2.97e6,
+      "resources": 3.03e6,
       "property": 2.6407e4
     }
   },
-  "last_update": "2019.1.21 21:17",
+  "last_update": "2019.1.23 10:04",
   "notice": {
     "name": "营地公告 第一期",
     "date": "2019.1.1",
