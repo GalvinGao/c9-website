@@ -1,21 +1,21 @@
 {
   "members": {
-    "total": 66,
+    "total": 68,
     "limit": 80
   },
   "administrators": {
-    "total": 7,
+    "total": 8,
     "limit": 10
   },
   "campsite": {
     "era": "蒸汽时代",
     "mayor": "天秀丶ice",
     "balance": {
-      "resources": 3.03e6,
+      "resources": 3.11e6,
       "property": 2.6407e4
     }
   },
-  "last_update": "2019.1.23 10:04",
+  "last_update": "2019.1.27 19:25",
   "notice": {
     "name": "营地公告 第一期",
     "date": "2019.1.1",
